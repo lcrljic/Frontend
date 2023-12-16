@@ -1,0 +1,31 @@
+#divColWrap {
+	background-color: green;
+	padding: 30px;
+}
+.divCol4 {
+	background-color: red;
+	color: #ffffff;
+	margin-right: 2%;
+	width: 32%;
+	float: left;
+	margin-bottom: 2%;
+}
+.divCol3 {
+	background-color: blue;
+	color: #ffffff;
+	margin-right: 2%;
+	width: 23.5%;
+	float: left;
+	margin-bottom: 2%;
+}
+.divCol6 {
+	background-color: yellow;
+	color: #ffffff;
+	margin-right: 2%;
+	width: 49%;
+	float: left;
+	margin-bottom: 2%;
+}
+.last {
+	margin-right: 0;
+}
