@@ -1,0 +1,36 @@
+/* CSS TAG selektor */
+h1 {
+	font-size: 24px;
+	color: red;
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 20px;
+	margin: 30px 20px 10px 5px;
+	/*margin-bottom: 20px;*/
+	border: solid 2px #c3c3c3;
+	background-color: yellow;
+	font-style: italic;
+}
+/* CSS ID selektor */
+#mojPrviNaslov {
+	color: green;
+	text-transform: uppercase;
+}
+/* CSS CLASS selektor */
+.mojNaslov {
+	color: blue;
+	text-decoration: underline;
+}
+/* Grupiranje selektora */
+h3, h2, p, .mojNaslov {
+	font-family: Arial;
+}
+/* Kombiniranje selektora */
+.textStyle1 b {
+	color: red;
+}
+/* Kombiniranje i grupiranje selektora */
+.textStyle1 b, #list1 li {
+	color: red;
+}
