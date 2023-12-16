@@ -1,0 +1,82 @@
+body {
+	font-family: Arial;
+	font-size: 13px;
+	line-height: 1.25em;
+	color: #555555;
+}
+body, ul, li, h1, h2, h3, h4, p {
+	margin: 0;
+	padding: 0;
+}
+.divCol4 {
+	margin-right: 2%;
+	width: 32%;
+	float: left;
+	margin-bottom: 2%;
+}
+.divCol3 {
+	margin-right: 2%;
+	width: 23.5%;
+	float: left;
+	margin-bottom: 2%;
+}
+.divCol6 {
+	margin-right: 2%;
+	width: 49%;
+	float: left;
+	margin-bottom: 2%;
+}
+#divTopBarWrap {
+	background-color: #f5f5f5;
+	padding: 5px 25px;
+}
+#divTopBarCol1, #divLogo {
+	float: left;
+}
+#divTopBarCol2, #divMenu {
+	float: right;
+}
+#divTopBar ul li {
+	display: inline-block;
+	margin: 0 10px;
+}
+#divMenu ul li {
+	display: inline-block;
+}
+#divMenu ul li a {
+	color: #555555;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+	padding: 20px 7px;
+	display: block;
+}
+#divMenu ul li.lastItem a {
+	background-color: #AB7442;
+	color: #ffffff;
+	font-weight: bold;
+	text-transform: capitalize;
+	padding: 20px;
+}
+#divLogo h1 {
+	color: #AB7442;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 20px 30px;
+}
+#divHeroContent img {
+	width: 100%;
+}
+#divSection1, #divSection3 {
+	width: 1280px;
+	margin: 0 auto;
+}
+#divSection1 {
+	padding: 30px 0;
+}
+#divSection1 img, #divSection2Wrap img, #divSection3 img {
+	width: 100%;
+}
+.last {
+	margin-right: 0; 
+}
