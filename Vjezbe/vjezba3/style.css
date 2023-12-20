@@ -21,8 +21,7 @@ body, ul, li, h1, h2, h3, h4, p {
 	margin-bottom: 2%;
 }
 .divCol6 {
-	margin-right: 2%;
-	width: 49%;
+	width: 50%;
 	float: left;
 	margin-bottom: 2%;
 }
@@ -67,16 +66,52 @@ body, ul, li, h1, h2, h3, h4, p {
 #divHeroContent img {
 	width: 100%;
 }
-#divSection1, #divSection3 {
+#divSection1, #divSection3, #divSection5, #divFooter {
 	width: 1280px;
 	margin: 0 auto;
 }
 #divSection1 {
 	padding: 30px 0;
 }
-#divSection1 img, #divSection2Wrap img, #divSection3 img {
+#divSection1Wrap img, #divSection2Wrap img, #divSection3 img, #divSection4Wrap img, #divSection5Wrap img {
 	width: 100%;
 }
 .last {
 	margin-right: 0; 
+}
+.divBoxStyle1 {
+	background-color: #f5f5f5;
+    padding: 141px 50px;
+}
+.divBoxStyle1 h1 {
+	font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.divBoxStyle1 h1 span {
+	margin-left: 10px;
+    border-bottom: solid 6px #555555;
+    display: inline-block;
+    width: 32px;
+}
+.divBoxStyle1 p {
+	font-size: 16px;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+}
+.divBoxStyle1 img {
+	margin-bottom: 20px;
+}
+.buttonStyle1 {
+	background-color: #AB7442;
+	padding: 15px 25px;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.buttonStyle1:hover {
+	background-color: #555555;
 }
