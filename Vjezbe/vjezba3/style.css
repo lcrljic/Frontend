@@ -70,6 +70,10 @@ body, ul, li, h1, h2, h3, h4, p {
 	width: 1280px;
 	margin: 0 auto;
 }
+#divSection1Wrap, #divSection2Wrap, #divSection3Wrap, #divSection4Wrap, #divSection5Wrap, #divFooterWrap {
+	margin-top: 55px;
+	margin-bottom: 55px;
+}
 #divSection1 {
 	padding: 30px 0;
 }
@@ -114,4 +118,70 @@ body, ul, li, h1, h2, h3, h4, p {
 }
 .buttonStyle1:hover {
 	background-color: #555555;
+}
+.titleBoxStyle1 {
+	text-align: center;
+}
+.titleBoxStyle1 h1 {
+	font-size: 45px;
+    font-weight: bold;
+    line-height: 1.3em;
+    position: relative;
+    display: inline-block;
+    padding: 10px 50px 25px 50px;
+}
+.titleBoxStyle1 h1::before {
+	left: 0;
+}
+.titleBoxStyle1 h1::after {
+	right: 0;
+}
+.titleBoxStyle1 h1::before, .titleBoxStyle1 h1::after {
+	content: "";
+	position: absolute;
+	height: 5px;
+	width: 45px;
+	background-color: #555555;
+	top: 60px;
+}
+.contentBoxWrapStyle1 {
+	border: solid 1px #c3c3c3;
+}
+.contentBoxStyle1  {
+	padding: 25px;
+	text-align: center;
+}
+.contentBoxStyle1 h2 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #555555;
+	margin-bottom: 25px;
+}
+.contentBoxStyle1 p {
+	line-height: 1.4em;
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+.contentBoxStyle1 a {
+	color: #AB7442;
+	font-weight: bold;
+	display: inline-block;
+	font-size: 15px;
+}
+.contentBoxStyle1 a:hover {
+	color: #555555;
+}
+#divFooterWrap {
+	background-image: url("img/footer.jpg");
+	background-size: cover;
+	margin-bottom: 0;
+	color: #f5f5f5;
+}
+#divFooter {
+	padding: 60px 0;
+}
+#divFooter h3 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 25px;
 }
