@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ovo je vježba 4</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js/jquery-3.7.1.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		//Varijable i tipovi podataka
+		var a = 10;
+		var b = 15;
+		var c = a + b;
+		//alert(c);
+		var ime = "Moje ime je Pavle";
+		var godine = 40;
+		var rez = ime + " i imam " + godine + " godina";
+		//alert(rez);
+		//Funkcije sa i bez parametara
+		function zbroji(){
+			var a = 10;
+			var b = 15;
+			var c = a + b;
+			alert(c);
+		}
+		//zbroji();
+		function pametnoZbroji(a,b){
+			var c = a + b;
+			alert(c);
+		}
+		//pametnoZbroji(12,16);
+		//Uvjeti
+		var god = 18;
+		var spol = "m"; 
+		if(god>=18){
+			//alert("Punoljetni ste");
+		}else if(spol=="m"){
+			//alert("Maloljetni ste ali ste muško");
+		}else {
+			//alert("Maloljetni ste i žensko ste");
+		}
+		//Petlja FOR
+		for(i=1;i<=10;i++){
+			console.log(i);
+		}
+		//Petlja WHILE
+		var i = 1;
+		while(i<=10){
+			console.log(i);
+			i++;
+		}
+	</script>
+	<div id="divTopBarWrap">
+		<div class="divCol4">
+			<p>Email: info@edunova.hr</p>
+		</div>
+		<div class="divCol4 topBarInfoStyle2">
+			<p>Lokacija: Lorenza Jagera 5, Osijek</p>
+		</div>
+		<div class="divCol4 last topBarInfoStyle1">
+			<p>Mob: 099/2550-205</p>
+		</div>
+		<div style="clear: both;"></div>
+	</div><!-- end #divTopBarWrap -->
+	<div id="divHeaderWrap">
+		<div class="divCol6">
+			<h1>Edunova W34</h1>
+		</div>
+		<div class="divCol6 last">
+			<ul id="ulMainMenu">
+				<li><a href="#">Naslovna</a></li>
+				<li><a href="#">O nama</a></li>
+				<li><a href="#">Usluge</a></li>
+				<li><a href="#">Proizvodi</a></li>
+				<li><a href="#">Kontakt</a></li>
+			</ul>
+		</div>
+		<div style="clear: both;"></div>
+	</div><!-- end #divHeaderWrap -->
+	<div id="divHeroSectionWrap">
+		<div id="divHeroSectionInnerWrap">
+			<div id="divHeroSection">
+				<h2>We provide the best transport service</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				</p>
+				<a href="#" class="buttonStyle1">Read more</a>
+			</div>
+		</div>
+	</div><!-- end #divHeroSectionWrap -->
+	<div id="divSection1Wrap">
+		<div id="divSection1">
+			<h1 class="headTitleStyle1">Ovo su neke <span>naše usluge</span></h1>
+			<h2 class="headTitleStyle2">ovo je podnaslov koji opisuje dodatno neke naše usluge</h2>
+			<div class="divColWrap">
+				<div class="divCol6">
+					<div class="divContentBoxStyle1">
+						<div class="boxImgStyle1">
+							<img src="images/s1.png">
+						</div>
+						<div class="boxDescStyle1">
+							<h3>Neka moja usluga 1</h3>
+							<p>Neki moj opis prve usluge koji ćemo kasnije prilagoditi</p>
+							<a href="#" class="buttonStyle2">Read more</a>
+						</div>
+						<div style="clear: both;"></div>
+					</div>
+				</div>
+				<div class="divCol6 last">
+					<div class="divContentBoxStyle1">
+						<div class="boxImgStyle1">
+							<img src="images/s2.png">
+						</div>
+						<div class="boxDescStyle1">
+							<h3>Neka moja usluga 2</h3>
+							<p>Neki moj opis prve usluge koji ćemo kasnije prilagoditi</p>
+							<a href="#" class="buttonStyle2">Read more</a>
+						</div>
+						<div style="clear: both;"></div>
+					</div>
+				</div>
+				<div class="divCol6">
+					<div class="divContentBoxStyle1">
+						<div class="boxImgStyle1">
+							<img src="images/s3.png">
+						</div>
+						<div class="boxDescStyle1">
+							<h3>Neka moja usluga 3</h3>
+							<p>Neki moj opis prve usluge koji ćemo kasnije prilagoditi</p>
+							<a href="#" class="buttonStyle2">Read more</a>
+						</div>
+						<div style="clear: both;"></div>
+					</div>
+				</div>
+				<div class="divCol6 last">
+					<div class="divContentBoxStyle1">
+						<div class="boxImgStyle1">
+							<img style="width: 60%" src="images/s4.png">
+						</div>
+						<div class="boxDescStyle1">
+							<h3>Neka moja usluga 4</h3>
+							<p>Neki moj opis prve usluge koji ćemo kasnije prilagoditi</p>
+							<a href="#" class="buttonStyle2">Read more</a>
+						</div>
+						<div style="clear: both;"></div>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+		</div><!-- end #divSection1 -->
+	</div><!-- end #divSection1Wrap -->
+	<div id="divSection3Wrap">
+		<div id="divSection3">
+			<h3 class="headTitleStyle1"><span>G</span> alerija</h3>
+			<div class="divColWrap divGallery">
+				<div class="divCol3">
+					<img src="images/team-1.jpg" novaputanja="images/testimonial-1.jpg">
+				</div>
+				<div class="divCol3">
+					<img src="images/team-2.jpg" novaputanja="images/testimonial-2.jpg">
+				</div>
+				<div class="divCol3">
+					<img src="images/team-3.jpg" novaputanja="images/testimonial-3.jpg">
+				</div>
+				<div class="divCol3 last">
+					<img src="images/team-4.jpg" novaputanja="images/testimonial-4.jpg">
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+	</div>
+	<div id="divSection2Wrap">
+		<div id="divSection2">
+			<div class="divCol6">
+				<h3 class="headTitleStyle1"><span>O</span> nama</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+				<a href="#" class="buttonStyle1">Više o nama</a>
+
+				<div id="divForm1">
+					<form id="obrazac1">
+						<div class="divElementBox1">
+							<label for="ime">Ime</label>
+							<input id="ime" name="ime" type="text" value="" placeholder="Unesite svoje ime">
+							<p>Provjerite svoj unos</p>
+						</div>
+						<div class="divElementBox1">
+							<label for="prezime">Prezime</label>
+							<input id="prezime" name="prezime" type="text" value="Neko prezime">
+						</div>
+						<div class="divElementBox1">
+							<label for="lozinka">Lozinka</label>
+							<input id="lozinka" name="lozinka" type="password" value="">
+						</div>
+						<div class="divElementBox1">
+							<label for="email">Email</label>
+							<input id="email" name="email" type="email" value="">
+						</div>
+						<div class="divElementBox2">
+							<input id="hobi1" name="hobi1" type="checkbox" value="Nogomet">
+							<label for="hobi1">Nogomet</label>
+						</div>
+						<div class="divElementBox2">
+							<input id="hobi2" name="hobi2" type="checkbox" value="Rukomet">
+							<label for="hobi2">Rukomet</label>
+						</div>
+						<div class="divElementBox2">
+							<input id="hobi3" name="hobi3" type="checkbox" value="Tenis">
+							<label for="hobi3">Tenis</label>
+						</div>
+						<div class="divElementBox2">
+							<input id="spol1" name="spol" type="radio" value="m">
+							<label for="spol1">Muški</label>
+						</div>
+						<div class="divElementBox2">
+							<input id="spol2" name="spol" type="radio" value="ž">
+							<label for="spol2">Ženski</label>
+						</div>
+						<div class="divElementBox3">
+							<label for="poruka">Vaša poruka</label>
+							<textarea id="poruka" name="poruka">Ovdje je value</textarea>
+						</div>
+						<div class="divElementBox3">
+							<label for="smjer">Vaš smjer</label>
+							<select id="smjer" name="smjer">
+								<option value="W34">Web dizajn</option>
+								<option>Grafički dizajn</option>
+								<option>Mobile programiranje</option>
+								<option>Java programiranje</option>
+							</select>
+						</div>
+						<div class="divElementBox4">
+							<input id="btt1" name="btt1" type="button" value="Gumb 1" onclick="ispisi()">
+							<input id="btt2" name="btt2" type="submit" value="Spremi">
+							<input id="btt3" name="btt3" type="reset" value="Obriši">
+							<input id="btt4" name="btt4" type="button" value="jQuery button 1">
+							<input id="btt5" name="btt5" type="button" value="jQuery show/hide">
+							<input id="btt6" name="btt6" type="button" value="jQuery add/remove Class">
+						</div>
+					</form>
+				</div>
+				<script type="text/javascript">
+					$(document).ready(function(){
+						//Javascript funkcionalnost
+						function ispisi(){
+							var txt1 = document.getElementById("ime").value;
+							var txt2 = document.getElementById("prezime").value;
+							var rez = parseInt(txt1) + parseInt(txt2);
+							var porukaElement = document.getElementById("poruka");
+							if(rez>20){
+								porukaElement.style.backgroundColor = "green";
+								//document.getElementById("poruka").style.backgroundColor = "green";
+							}else{
+								document.getElementById("poruka").style.backgroundColor = "#FF0000";
+							}
+							document.getElementById("poruka").value=rez;
+						}
+						//jQuery funkcionalnost
+						$('#btt4').click(function(){
+							var txt1 = $('#ime').val();
+							var txt2 = $('#prezime').val();
+							var rez = parseInt(txt1) + parseInt(txt2);
+							if(rez>20){
+								$('#poruka').css('backgroundColor','green');
+							}else{
+								$('#poruka').css('backgroundColor','red');
+							}
+							$('#poruka').val(rez);
+						});
+						$('#btt5').click(function(){
+							//$('#poruka').hide('slow');
+							$('#poruka').toggle('slow');
+						});
+						$('#btt6').click(function(){
+							//$('#poruka').hide('slow');
+							//$('#poruka').addClass('mojaNovaKlasa');
+							//$('#poruka').removeClass('mojaNovaKlasa');
+							$('#poruka').toggleClass('mojaNovaKlasa');
+						});
+						$('#ime').keyup(function(){
+							var txt = $('#ime').val();
+							var duzinaTxt = txt.length;
+							if(duzinaTxt<5){
+								$('#ime').addClass('errorStyle1');
+								$('.divElementBox1 p').addClass('errorStyle1');
+							}else{
+								$('#ime').removeClass('errorStyle1');
+								$('.divElementBox1 p').removeClass('errorStyle1');
+							}
+							if(duzinaTxt==5){
+								$('#ime').attr('maxlength','5');
+							}
+							//console.log(txt);
+						});
+						$('.divGallery img').hover(function(){
+							var staraPutanja = $(this).attr('src');
+							var novaPutanja = $(this).attr('novaputanja');
+							 $(this).attr('src',novaPutanja);
+							 $(this).attr('novaputanja',staraPutanja);
+						});
+					}); // end ready
+					
+				</script>
+			</div>
+			<div class="divCol6 last">
+				<img src="images/about-img.jpg">
+			</div>
+			<div style="clear: both;"></div>
+		</div><!-- end #divSection2 -->
+	</div><!-- end #divSection2Wrap -->
+	<div id="divFooterWrap">
+		<div id="divFooter">
+			<div class="divCol3">
+				<h3>Footer naslov 1</h3>
+				<ul>
+					<li>Neka footer stavka</li>
+					<li>Neka footer stavka</li>
+					<li>Neka footer stavka</li>
+					<li>Neka footer stavka</li>
+					<li>Neka footer stavka</li>
+				</ul>
+			</div>
+			<div class="divCol3">
+				<h3>Footer naslov 2</h3>
+				<ul>
+					<li>Neka footer stavka</li>
+					<li>Neka footer stavka</li>
+					<li>Neka footer stavka</li>
+					<li>Neka footer stavka</li>
+					<li>Neka footer stavka</li>
+				</ul>
+			</div>
+			<div class="divCol3">
+				<h3>Footer naslov 3</h3>
+				<ul>
+					<li>Neka footer stavka</li>
+					<li>Neka footer stavka</li>
+					<li>Neka footer stavka</li>
+					<li>Neka footer stavka</li>
+					<li>Neka footer stavka</li>
+				</ul>
+			</div>
+			<div class="divCol3 last">
+				<h3>Footer naslov 4</h3>
+				<ul>
+					<li>Neka footer stavka</li>
+					<li>Neka footer stavka</li>
+					<li>Neka footer stavka</li>
+					<li>Neka footer stavka</li>
+					<li>Neka footer stavka</li>
+				</ul>
+			</div>
+			<div style="clear: both;"></div>
+		</div><!-- end #divFooter -->
+	</div><!-- end #divFooterWrap -->
+</body>
+</html>
