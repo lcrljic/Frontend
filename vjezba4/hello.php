@@ -142,17 +142,27 @@
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
 				<a href="#" class="buttonStyle1">Više o nama</a>
-
+				<?php 
+					if(isset($_GET['btt1'])){
+						$ime = $_GET['ime'];
+						$prezime = $_GET['prezime'];
+						echo '<h2>Vaše ime: '.$ime.' '.$prezime.'</h2>';
+					}
+				?>
 				<div id="divForm1">
-					<form id="obrazac1">
+					<form id="obrazac1" method="get" action="">
 						<div class="divElementBox1">
 							<label for="ime">Ime</label>
 							<input id="ime" name="ime" type="text" value="" placeholder="Unesite svoje ime">
-							<p>Provjerite svoj unos</p>
 						</div>
 						<div class="divElementBox1">
 							<label for="prezime">Prezime</label>
 							<input id="prezime" name="prezime" type="text" value="Neko prezime">
+						</div>
+						<div class="divElementBox1">
+							<label for="ime">Poštanski broj</label>
+							<input id="ptt" name="ptt" type="text" value="" placeholder="Unesite poštanski broj">
+							<p>Provjerite svoj unos</p>
 						</div>
 						<div class="divElementBox1">
 							<label for="lozinka">Lozinka</label>
@@ -196,65 +206,25 @@
 							</select>
 						</div>
 						<div class="divElementBox4">
-							<input id="btt1" name="btt1" type="button" value="Gumb 1" onclick="ispisi()">
-							<input id="btt2" name="btt2" type="submit" value="Spremi">
-							<input id="btt3" name="btt3" type="reset" value="Obriši">
-							<input id="btt4" name="btt4" type="button" value="jQuery button 1">
-							<input id="btt5" name="btt5" type="button" value="jQuery show/hide">
-							<input id="btt6" name="btt6" type="button" value="jQuery add/remove Class">
+							<input id="btt1" name="btt1" type="submit" value="Spremi">
+							<input id="btt2" name="btt2" type="reset" value="Obriši">
 						</div>
 					</form>
 				</div>
 				<script type="text/javascript">
 					$(document).ready(function(){
-						//Javascript funkcionalnost
-						function ispisi(){
-							var txt1 = document.getElementById("ime").value;
-							var txt2 = document.getElementById("prezime").value;
-							var rez = parseInt(txt1) + parseInt(txt2);
-							var porukaElement = document.getElementById("poruka");
-							if(rez>20){
-								porukaElement.style.backgroundColor = "green";
-								//document.getElementById("poruka").style.backgroundColor = "green";
-							}else{
-								document.getElementById("poruka").style.backgroundColor = "#FF0000";
-							}
-							document.getElementById("poruka").value=rez;
-						}
-						//jQuery funkcionalnost
-						$('#btt4').click(function(){
-							var txt1 = $('#ime').val();
-							var txt2 = $('#prezime').val();
-							var rez = parseInt(txt1) + parseInt(txt2);
-							if(rez>20){
-								$('#poruka').css('backgroundColor','green');
-							}else{
-								$('#poruka').css('backgroundColor','red');
-							}
-							$('#poruka').val(rez);
-						});
-						$('#btt5').click(function(){
-							//$('#poruka').hide('slow');
-							$('#poruka').toggle('slow');
-						});
-						$('#btt6').click(function(){
-							//$('#poruka').hide('slow');
-							//$('#poruka').addClass('mojaNovaKlasa');
-							//$('#poruka').removeClass('mojaNovaKlasa');
-							$('#poruka').toggleClass('mojaNovaKlasa');
-						});
-						$('#ime').keyup(function(){
-							var txt = $('#ime').val();
+						$('#ptt').keyup(function(){
+							var txt = $('#ptt').val();
 							var duzinaTxt = txt.length;
 							if(duzinaTxt<5){
-								$('#ime').addClass('errorStyle1');
+								$('#ptt').addClass('errorStyle1');
 								$('.divElementBox1 p').addClass('errorStyle1');
 							}else{
-								$('#ime').removeClass('errorStyle1');
+								$('#ptt').removeClass('errorStyle1');
 								$('.divElementBox1 p').removeClass('errorStyle1');
 							}
 							if(duzinaTxt==5){
-								$('#ime').attr('maxlength','5');
+								$('#ptt').attr('maxlength','5');
 							}
 							//console.log(txt);
 						});
